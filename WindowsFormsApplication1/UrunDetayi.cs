@@ -1,14 +1,7 @@
-﻿using EFDemo.DB.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Entity;
 
 namespace WindowsFormsApplication1
 {
@@ -26,10 +19,9 @@ namespace WindowsFormsApplication1
         EFDemo.DB.EFDemoDBContext database = new EFDemo.DB.EFDemoDBContext();
         private void goster_Click(object sender, EventArgs e)
         {
-            var goster = from a in database.Urun
-                    where a.UrunAd == Urun_Adi.Text
-                    select a;
-            if(goster.Any())
+            var goster = (from q in database.Urun where q.UrunAd == Urun_Adi.Text select new { q.UrunAd, q.Stok, q.Fiyat}).ToList();
+
+            if (goster.Any())
             {
                 Urun_Detayi_Grid.DataSource = goster.ToList();
             }

@@ -1,14 +1,5 @@
-﻿using EFDemo.DB.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
-using WindowsFormsApplication1;
 
 namespace WindowsFormsApplication1
 {
@@ -41,13 +32,6 @@ namespace WindowsFormsApplication1
             urun_guncelle.ShowDialog();
         }
 
-        private void siparis_takip_Click(object sender, EventArgs e)
-        {
-
-            SiparisTakibi siparis_takip = new SiparisTakibi();
-            siparis_takip.ShowDialog();
-        }
-
         private void musteri_detayi_Click(object sender, EventArgs e)
         {
             MusteriDetayi musteri_detayi = new MusteriDetayi();
@@ -59,6 +43,18 @@ namespace WindowsFormsApplication1
         {
             UrunDetayi urun_detayi = new UrunDetayi();
             urun_detayi.ShowDialog();
+        }
+
+        private void Urun_Sil_Click(object sender, EventArgs e)
+        {
+            UrunSil urun_sil = new UrunSil();
+            urun_sil.ShowDialog();
+        }
+
+        private void Musteri_Sil_Click(object sender, EventArgs e)
+        {
+            MusteriSil silme_islemi = new MusteriSil();
+            silme_islemi.ShowDialog();
         }
     }
 }

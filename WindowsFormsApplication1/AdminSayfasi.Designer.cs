@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminSayfasi));
             this.Musteri_Ekle = new System.Windows.Forms.Button();
             this.Urun_Ekle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Urun_Guncelle = new System.Windows.Forms.Button();
-            this.Siparis_Takibi = new System.Windows.Forms.Button();
             this.Musteri_Detayi = new System.Windows.Forms.Button();
             this.Urun_Detayi = new System.Windows.Forms.Button();
+            this.Musteri_Sil = new System.Windows.Forms.Button();
+            this.Urun_Sil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Musteri_Ekle
             // 
-            this.Musteri_Ekle.BackColor = System.Drawing.Color.Linen;
+            this.Musteri_Ekle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Musteri_Ekle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Musteri_Ekle.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Musteri_Ekle.Location = new System.Drawing.Point(16, 82);
+            this.Musteri_Ekle.Location = new System.Drawing.Point(242, 41);
             this.Musteri_Ekle.Margin = new System.Windows.Forms.Padding(4);
             this.Musteri_Ekle.Name = "Musteri_Ekle";
             this.Musteri_Ekle.Size = new System.Drawing.Size(135, 28);
@@ -53,13 +55,13 @@
             // 
             // Urun_Ekle
             // 
-            this.Urun_Ekle.BackColor = System.Drawing.Color.Linen;
+            this.Urun_Ekle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Urun_Ekle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Urun_Ekle.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Urun_Ekle.Location = new System.Drawing.Point(196, 82);
+            this.Urun_Ekle.Location = new System.Drawing.Point(158, 301);
             this.Urun_Ekle.Margin = new System.Windows.Forms.Padding(4);
             this.Urun_Ekle.Name = "Urun_Ekle";
-            this.Urun_Ekle.Size = new System.Drawing.Size(131, 28);
+            this.Urun_Ekle.Size = new System.Drawing.Size(135, 26);
             this.Urun_Ekle.TabIndex = 1;
             this.Urun_Ekle.Text = "Ürün Ekle";
             this.Urun_Ekle.UseVisualStyleBackColor = false;
@@ -78,10 +80,10 @@
             // 
             // Urun_Guncelle
             // 
-            this.Urun_Guncelle.BackColor = System.Drawing.Color.Linen;
+            this.Urun_Guncelle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Urun_Guncelle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Urun_Guncelle.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Urun_Guncelle.Location = new System.Drawing.Point(16, 127);
+            this.Urun_Guncelle.Location = new System.Drawing.Point(315, 358);
             this.Urun_Guncelle.Margin = new System.Windows.Forms.Padding(4);
             this.Urun_Guncelle.Name = "Urun_Guncelle";
             this.Urun_Guncelle.Size = new System.Drawing.Size(135, 28);
@@ -90,26 +92,12 @@
             this.Urun_Guncelle.UseVisualStyleBackColor = false;
             this.Urun_Guncelle.Click += new System.EventHandler(this.urun_guncelle_Click);
             // 
-            // Siparis_Takibi
-            // 
-            this.Siparis_Takibi.BackColor = System.Drawing.Color.Linen;
-            this.Siparis_Takibi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Siparis_Takibi.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Siparis_Takibi.Location = new System.Drawing.Point(196, 127);
-            this.Siparis_Takibi.Margin = new System.Windows.Forms.Padding(4);
-            this.Siparis_Takibi.Name = "Siparis_Takibi";
-            this.Siparis_Takibi.Size = new System.Drawing.Size(131, 28);
-            this.Siparis_Takibi.TabIndex = 3;
-            this.Siparis_Takibi.Text = "Sipariş Takibi";
-            this.Siparis_Takibi.UseVisualStyleBackColor = false;
-            this.Siparis_Takibi.Click += new System.EventHandler(this.siparis_takip_Click);
-            // 
             // Musteri_Detayi
             // 
-            this.Musteri_Detayi.BackColor = System.Drawing.Color.Linen;
+            this.Musteri_Detayi.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Musteri_Detayi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Musteri_Detayi.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Musteri_Detayi.Location = new System.Drawing.Point(16, 169);
+            this.Musteri_Detayi.Location = new System.Drawing.Point(158, 92);
             this.Musteri_Detayi.Name = "Musteri_Detayi";
             this.Musteri_Detayi.Size = new System.Drawing.Size(135, 26);
             this.Musteri_Detayi.TabIndex = 4;
@@ -119,26 +107,52 @@
             // 
             // Urun_Detayi
             // 
-            this.Urun_Detayi.BackColor = System.Drawing.Color.Linen;
+            this.Urun_Detayi.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Urun_Detayi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Urun_Detayi.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Urun_Detayi.Location = new System.Drawing.Point(196, 171);
+            this.Urun_Detayi.Location = new System.Drawing.Point(158, 360);
             this.Urun_Detayi.Name = "Urun_Detayi";
-            this.Urun_Detayi.Size = new System.Drawing.Size(131, 24);
+            this.Urun_Detayi.Size = new System.Drawing.Size(135, 26);
             this.Urun_Detayi.TabIndex = 5;
             this.Urun_Detayi.Text = "Ürün Detay";
             this.Urun_Detayi.UseVisualStyleBackColor = false;
             this.Urun_Detayi.Click += new System.EventHandler(this.urun_detayi_Click);
+            // 
+            // Musteri_Sil
+            // 
+            this.Musteri_Sil.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Musteri_Sil.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Musteri_Sil.Location = new System.Drawing.Point(315, 90);
+            this.Musteri_Sil.Name = "Musteri_Sil";
+            this.Musteri_Sil.Size = new System.Drawing.Size(135, 28);
+            this.Musteri_Sil.TabIndex = 6;
+            this.Musteri_Sil.Text = "Müşteri Sil";
+            this.Musteri_Sil.UseVisualStyleBackColor = false;
+            this.Musteri_Sil.Click += new System.EventHandler(this.Musteri_Sil_Click);
+            // 
+            // Urun_Sil
+            // 
+            this.Urun_Sil.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Urun_Sil.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Urun_Sil.Location = new System.Drawing.Point(315, 301);
+            this.Urun_Sil.Name = "Urun_Sil";
+            this.Urun_Sil.Size = new System.Drawing.Size(135, 26);
+            this.Urun_Sil.TabIndex = 7;
+            this.Urun_Sil.Text = "Ürün Sil";
+            this.Urun_Sil.UseVisualStyleBackColor = false;
+            this.Urun_Sil.Click += new System.EventHandler(this.Urun_Sil_Click);
             // 
             // AdminSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(343, 207);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(572, 464);
+            this.Controls.Add(this.Urun_Sil);
+            this.Controls.Add(this.Musteri_Sil);
             this.Controls.Add(this.Urun_Detayi);
             this.Controls.Add(this.Musteri_Detayi);
-            this.Controls.Add(this.Siparis_Takibi);
             this.Controls.Add(this.Urun_Guncelle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Urun_Ekle);
@@ -158,9 +172,10 @@
         private System.Windows.Forms.Button Urun_Ekle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Urun_Guncelle;
-        private System.Windows.Forms.Button Siparis_Takibi;
         private System.Windows.Forms.Button Musteri_Detayi;
         private System.Windows.Forms.Button Urun_Detayi;
+        private System.Windows.Forms.Button Musteri_Sil;
+        private System.Windows.Forms.Button Urun_Sil;
     }
 }
 

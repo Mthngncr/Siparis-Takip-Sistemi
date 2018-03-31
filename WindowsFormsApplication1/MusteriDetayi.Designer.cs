@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriDetayi));
             this.Musteri_Detay_Grid = new System.Windows.Forms.DataGridView();
             this.Goster = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,18 +38,18 @@
             // 
             // Musteri_Detay_Grid
             // 
-            this.Musteri_Detay_Grid.BackgroundColor = System.Drawing.Color.Linen;
+            this.Musteri_Detay_Grid.BackgroundColor = System.Drawing.Color.GhostWhite;
             this.Musteri_Detay_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Musteri_Detay_Grid.Location = new System.Drawing.Point(26, 118);
+            this.Musteri_Detay_Grid.Location = new System.Drawing.Point(87, 289);
             this.Musteri_Detay_Grid.Name = "Musteri_Detay_Grid";
-            this.Musteri_Detay_Grid.Size = new System.Drawing.Size(718, 150);
+            this.Musteri_Detay_Grid.Size = new System.Drawing.Size(449, 98);
             this.Musteri_Detay_Grid.TabIndex = 0;
             // 
             // Goster
             // 
-            this.Goster.BackColor = System.Drawing.Color.Linen;
+            this.Goster.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Goster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Goster.Location = new System.Drawing.Point(197, 67);
+            this.Goster.Location = new System.Drawing.Point(290, 134);
             this.Goster.Name = "Goster";
             this.Goster.Size = new System.Drawing.Size(75, 23);
             this.Goster.TabIndex = 1;
@@ -59,9 +60,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Linen;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(26, 43);
+            this.label1.Location = new System.Drawing.Point(186, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 2;
@@ -69,8 +70,8 @@
             // 
             // Musteri_Adi
             // 
-            this.Musteri_Adi.BackColor = System.Drawing.Color.Linen;
-            this.Musteri_Adi.Location = new System.Drawing.Point(147, 39);
+            this.Musteri_Adi.BackColor = System.Drawing.Color.GhostWhite;
+            this.Musteri_Adi.Location = new System.Drawing.Point(290, 86);
             this.Musteri_Adi.Name = "Musteri_Adi";
             this.Musteri_Adi.Size = new System.Drawing.Size(125, 22);
             this.Musteri_Adi.TabIndex = 3;
@@ -80,8 +81,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(774, 309);
+            this.ClientSize = new System.Drawing.Size(601, 479);
             this.Controls.Add(this.Musteri_Adi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Goster);

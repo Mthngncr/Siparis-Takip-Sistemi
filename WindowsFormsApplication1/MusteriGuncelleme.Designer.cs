@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriGuncelleme));
             this.Kaydet = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,10 +58,10 @@
             // 
             // Kaydet
             // 
-            this.Kaydet.BackColor = System.Drawing.Color.Linen;
+            this.Kaydet.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Kaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Kaydet.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Kaydet.Location = new System.Drawing.Point(159, 294);
+            this.Kaydet.Location = new System.Drawing.Point(245, 421);
             this.Kaydet.Name = "Kaydet";
             this.Kaydet.Size = new System.Drawing.Size(101, 26);
             this.Kaydet.TabIndex = 0;
@@ -72,11 +73,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Linen;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(23, 45);
+            this.label1.Location = new System.Drawing.Point(51, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 21);
             this.label1.TabIndex = 2;
@@ -86,11 +87,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Linen;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(23, 73);
+            this.label2.Location = new System.Drawing.Point(51, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 21);
             this.label2.TabIndex = 2;
@@ -100,11 +101,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Linen;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(23, 101);
+            this.label3.Location = new System.Drawing.Point(51, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 21);
             this.label3.TabIndex = 2;
@@ -114,11 +115,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Linen;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(23, 130);
+            this.label4.Location = new System.Drawing.Point(51, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 21);
             this.label4.TabIndex = 2;
@@ -128,11 +129,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Linen;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(23, 158);
+            this.label6.Location = new System.Drawing.Point(51, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 21);
             this.label6.TabIndex = 2;
@@ -142,11 +143,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Linen;
+            this.label7.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(24, 251);
+            this.label7.Location = new System.Drawing.Point(51, 373);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 21);
             this.label7.TabIndex = 2;
@@ -155,8 +156,8 @@
             // 
             // Kullanici_Adi
             // 
-            this.Kullanici_Adi.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Adi.Location = new System.Drawing.Point(159, 45);
+            this.Kullanici_Adi.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Adi.Location = new System.Drawing.Point(210, 90);
             this.Kullanici_Adi.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Adi.Name = "Kullanici_Adi";
             this.Kullanici_Adi.Size = new System.Drawing.Size(187, 20);
@@ -164,8 +165,8 @@
             // 
             // Kullanici_Soyadi
             // 
-            this.Kullanici_Soyadi.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Soyadi.Location = new System.Drawing.Point(159, 73);
+            this.Kullanici_Soyadi.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Soyadi.Location = new System.Drawing.Point(210, 131);
             this.Kullanici_Soyadi.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Soyadi.Name = "Kullanici_Soyadi";
             this.Kullanici_Soyadi.Size = new System.Drawing.Size(187, 20);
@@ -173,8 +174,8 @@
             // 
             // Kullanici_Yasi
             // 
-            this.Kullanici_Yasi.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Yasi.Location = new System.Drawing.Point(159, 102);
+            this.Kullanici_Yasi.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Yasi.Location = new System.Drawing.Point(210, 173);
             this.Kullanici_Yasi.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Yasi.Name = "Kullanici_Yasi";
             this.Kullanici_Yasi.Size = new System.Drawing.Size(187, 20);
@@ -182,8 +183,8 @@
             // 
             // Kullanici_Maili
             // 
-            this.Kullanici_Maili.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Maili.Location = new System.Drawing.Point(159, 130);
+            this.Kullanici_Maili.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Maili.Location = new System.Drawing.Point(210, 212);
             this.Kullanici_Maili.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Maili.Name = "Kullanici_Maili";
             this.Kullanici_Maili.Size = new System.Drawing.Size(187, 20);
@@ -191,8 +192,8 @@
             // 
             // Kullanici_Eski_Sifre
             // 
-            this.Kullanici_Eski_Sifre.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Eski_Sifre.Location = new System.Drawing.Point(159, 158);
+            this.Kullanici_Eski_Sifre.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Eski_Sifre.Location = new System.Drawing.Point(210, 252);
             this.Kullanici_Eski_Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Eski_Sifre.Name = "Kullanici_Eski_Sifre";
             this.Kullanici_Eski_Sifre.Size = new System.Drawing.Size(187, 20);
@@ -200,8 +201,8 @@
             // 
             // Kullanici_Bakiye
             // 
-            this.Kullanici_Bakiye.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Bakiye.Location = new System.Drawing.Point(159, 251);
+            this.Kullanici_Bakiye.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Bakiye.Location = new System.Drawing.Point(210, 373);
             this.Kullanici_Bakiye.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Bakiye.Name = "Kullanici_Bakiye";
             this.Kullanici_Bakiye.Size = new System.Drawing.Size(187, 20);
@@ -221,10 +222,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Linen;
+            this.label9.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(249, 8);
+            this.label9.Location = new System.Drawing.Point(210, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(152, 21);
             this.label9.TabIndex = 6;
@@ -233,7 +234,7 @@
             // Ad_Check
             // 
             this.Ad_Check.AutoSize = true;
-            this.Ad_Check.Location = new System.Drawing.Point(353, 45);
+            this.Ad_Check.Location = new System.Drawing.Point(414, 90);
             this.Ad_Check.Name = "Ad_Check";
             this.Ad_Check.Size = new System.Drawing.Size(15, 14);
             this.Ad_Check.TabIndex = 7;
@@ -243,7 +244,7 @@
             // Soyad_Check
             // 
             this.Soyad_Check.AutoSize = true;
-            this.Soyad_Check.Location = new System.Drawing.Point(353, 73);
+            this.Soyad_Check.Location = new System.Drawing.Point(414, 130);
             this.Soyad_Check.Name = "Soyad_Check";
             this.Soyad_Check.Size = new System.Drawing.Size(15, 14);
             this.Soyad_Check.TabIndex = 8;
@@ -253,7 +254,7 @@
             // Yas_Check
             // 
             this.Yas_Check.AutoSize = true;
-            this.Yas_Check.Location = new System.Drawing.Point(353, 102);
+            this.Yas_Check.Location = new System.Drawing.Point(414, 173);
             this.Yas_Check.Name = "Yas_Check";
             this.Yas_Check.Size = new System.Drawing.Size(15, 14);
             this.Yas_Check.TabIndex = 9;
@@ -263,7 +264,7 @@
             // Mail__Check
             // 
             this.Mail__Check.AutoSize = true;
-            this.Mail__Check.Location = new System.Drawing.Point(353, 130);
+            this.Mail__Check.Location = new System.Drawing.Point(414, 212);
             this.Mail__Check.Name = "Mail__Check";
             this.Mail__Check.Size = new System.Drawing.Size(15, 14);
             this.Mail__Check.TabIndex = 10;
@@ -273,7 +274,7 @@
             // Sifre__Check
             // 
             this.Sifre__Check.AutoSize = true;
-            this.Sifre__Check.Location = new System.Drawing.Point(353, 158);
+            this.Sifre__Check.Location = new System.Drawing.Point(414, 252);
             this.Sifre__Check.Name = "Sifre__Check";
             this.Sifre__Check.Size = new System.Drawing.Size(15, 14);
             this.Sifre__Check.TabIndex = 11;
@@ -283,7 +284,7 @@
             // Bakiye_Check
             // 
             this.Bakiye_Check.AutoSize = true;
-            this.Bakiye_Check.Location = new System.Drawing.Point(353, 251);
+            this.Bakiye_Check.Location = new System.Drawing.Point(414, 373);
             this.Bakiye_Check.Name = "Bakiye_Check";
             this.Bakiye_Check.Size = new System.Drawing.Size(15, 14);
             this.Bakiye_Check.TabIndex = 12;
@@ -293,11 +294,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Linen;
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(23, 222);
+            this.label5.Location = new System.Drawing.Point(51, 333);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 21);
             this.label5.TabIndex = 2;
@@ -307,11 +308,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Linen;
+            this.label10.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(23, 189);
+            this.label10.Location = new System.Drawing.Point(51, 293);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 21);
             this.label10.TabIndex = 2;
@@ -320,8 +321,8 @@
             // 
             // Kullanici_Sifre
             // 
-            this.Kullanici_Sifre.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Sifre.Location = new System.Drawing.Point(159, 190);
+            this.Kullanici_Sifre.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Sifre.Location = new System.Drawing.Point(210, 293);
             this.Kullanici_Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Sifre.Name = "Kullanici_Sifre";
             this.Kullanici_Sifre.Size = new System.Drawing.Size(187, 20);
@@ -329,8 +330,8 @@
             // 
             // Kullanici_Sifre_Tekrar
             // 
-            this.Kullanici_Sifre_Tekrar.BackColor = System.Drawing.Color.LemonChiffon;
-            this.Kullanici_Sifre_Tekrar.Location = new System.Drawing.Point(159, 223);
+            this.Kullanici_Sifre_Tekrar.BackColor = System.Drawing.Color.GhostWhite;
+            this.Kullanici_Sifre_Tekrar.Location = new System.Drawing.Point(210, 333);
             this.Kullanici_Sifre_Tekrar.Margin = new System.Windows.Forms.Padding(4);
             this.Kullanici_Sifre_Tekrar.Name = "Kullanici_Sifre_Tekrar";
             this.Kullanici_Sifre_Tekrar.Size = new System.Drawing.Size(187, 20);
@@ -341,7 +342,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(413, 332);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(587, 518);
             this.Controls.Add(this.Kullanici_Sifre_Tekrar);
             this.Controls.Add(this.Kullanici_Sifre);
             this.Controls.Add(this.label10);

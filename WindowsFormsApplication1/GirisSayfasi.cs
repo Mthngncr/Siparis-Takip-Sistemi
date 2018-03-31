@@ -1,14 +1,11 @@
 ﻿using EFDemo.DB.Entities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
+using System.Security.Cryptography;
 
 namespace WindowsFormsApplication1
 {
@@ -22,34 +19,54 @@ namespace WindowsFormsApplication1
         }
         EFDemo.DB.EFDemoDBContext database = new EFDemo.DB.EFDemoDBContext();
         Musteri musteri_isim = new Musteri();
-       
-        private void giris_Click(object sender, EventArgs e)
+        public static string ConvertStringtoMD5(string strword)
         {
 
-            var q = from a in database.Musteri where (a.KullanıcıAdı == Kullanici_Adi.Text && a.Password == Sifre.Text) select a;
-            if (q.Any())
+            MD5 md5 = MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(strword);
+            byte[] hash = md5.ComputeHash(inputBytes);
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
             {
-                musteri_isim = database.Musteri.Include(z => z.Siparis).Where(d => d.KullanıcıAdı == Kullanici_Adi.Text).FirstOrDefault();
-                AdminSayfasi.isim3 = musteri_isim.Ad;
-                MusteriGuncelleme.isim = musteri_isim.Ad;
-                SiparisEkrani.isim2 = musteri_isim.Ad;
-                SiparisEkrani form5 = new SiparisEkrani();
-                form5.ShowDialog();
-                if(Beni_Hatirla_Check.Checked == false)
+                sb.Append(hash[i].ToString("x2"));
+            }
+            return sb.ToString();
+        }
+        private void giris_Click(object sender, EventArgs e)
+        {
+            string md5a = ConvertStringtoMD5(Sifre.Text);
+            var q = from a in database.Musteri where (a.KullanıcıAdı == Kullanici_Adi.Text && a.Password ==md5a) select a;
+            if(Sifre.TextLength>=8 && Sifre.TextLength<=12)
+            {
+                if (q.Any())
                 {
-                    Kullanici_Adi.Text = "";
-                    Sifre.Text = "";
+                    musteri_isim = database.Musteri.Include(z => z.Siparis).Where(d => d.KullanıcıAdı == Kullanici_Adi.Text).FirstOrDefault();
+                    AdminSayfasi.isim3 = musteri_isim.Ad;
+                    MusteriGuncelleme.isim = musteri_isim.Ad;
+                    SiparisEkrani.isim2 = musteri_isim.Ad;
+                    SiparisEkrani form5 = new SiparisEkrani();
+                    form5.ShowDialog();
+                    if (Beni_Hatirla_Check.Checked == false)
+                    {
+                        Kullanici_Adi.Text = "";
+                        Sifre.Text = "";
+                    }
+                }
+                else
+                {
+                    if (Beni_Hatirla_Check.Checked == false)
+                    {
+                        Kullanici_Adi.Text = "";
+                        Sifre.Text = "";
+                    }
+                    MessageBox.Show("Kullanıcı Adıyla Şifre Uyumlu Değil!!");
                 }
             }
             else
             {
-                if (Beni_Hatirla_Check.Checked == false)
-                {
-                    Kullanici_Adi.Text = "";
-                    Sifre.Text = "";
-                }
-                MessageBox.Show("Kullanıcı Adıyla Şifre Uyumlu Değil!!");
+                MessageBox.Show("Girdiğiniz şifre 8-12 karakter arasında değildir!");
             }
+
         }
 
 

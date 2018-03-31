@@ -1,15 +1,9 @@
 ﻿using EFDemo.DB.Entities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
-
 
 namespace WindowsFormsApplication1
 {
@@ -74,26 +68,34 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
-                    if(guncel_musteri.Password == Kullanici_Eski_Sifre.Text)
+                    if ((Kullanici_Sifre.TextLength >= 8 && Kullanici_Sifre.TextLength <= 12) && (Kullanici_Eski_Sifre.TextLength >= 8 && Kullanici_Eski_Sifre.TextLength <= 12) && (Kullanici_Sifre_Tekrar.TextLength >= 8 && Kullanici_Sifre_Tekrar.TextLength <= 12))
                     {
-                        if (Kullanici_Sifre.Text == Kullanici_Sifre_Tekrar.Text)
+                        if (guncel_musteri.Password == GirisSayfasi.ConvertStringtoMD5(Kullanici_Eski_Sifre.Text))
                         {
-                            guncel_musteri.Password = Kullanici_Sifre_Tekrar.Text;
+                            if (Kullanici_Sifre.Text == Kullanici_Sifre_Tekrar.Text)
+                            {
+                                guncel_musteri.Password = GirisSayfasi.ConvertStringtoMD5( Kullanici_Sifre_Tekrar.Text);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Şifreler Eşleşmiyor!!");
+                                this.Close();
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Şifreler Eşleşmiyor!!");
+                            MessageBox.Show("Girdiğiniz Şifre Hatalı!");
+                            Kullanici_Eski_Sifre.Text = "";
                             this.Close();
+
+
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Girdiğiniz Şifre Hatalı!");
-                        Kullanici_Eski_Sifre.Text = "";
-                        this.Close();
-
-
+                        MessageBox.Show("Girdiğiniz şifre 8-12 karakter arasında değildir!");
                     }
+                   
                 }
                 if (Bakiye_Check.Checked == true)
                 {

@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C7F6017-E843-42B2-9E32-53B8BF5E2754}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{B4830001-12EF-401E-87F4-C374C458B805}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EFDemo.DB</RootNamespace>
-    <AssemblyName>EFDemo.DB</AssemblyName>
+    <RootNamespace>MigrationsDemo</RootNamespace>
+    <AssemblyName>MigrationsDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,8 +43,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,27 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFDemoDBContext.cs" />
-    <Compile Include="Entities\Musteri.cs" />
-    <Compile Include="Entities\Siparis.cs" />
-    <Compile Include="Entities\Urun.cs" />
-    <Compile Include="Mapping\MusteriMapping.cs" />
-    <Compile Include="Mapping\SiparisMapping.cs" />
-    <Compile Include="Mapping\UrunMapping.cs" />
-    <Compile Include="Migrations\201709050643410_migSiparis.cs" />
-    <Compile Include="Migrations\201709050643410_migSiparis.Designer.cs">
-      <DependentUpon>201709050643410_migSiparis.cs</DependentUpon>
+    <Compile Include="Migrations\201708281358054_AddBlogUrl.cs" />
+    <Compile Include="Migrations\201708281358054_AddBlogUrl.Designer.cs">
+      <DependentUpon>201708281358054_AddBlogUrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709050643410_migSiparis.resx">
-      <DependentUpon>201709050643410_migSiparis.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708281358054_AddBlogUrl.resx">
+      <DependentUpon>201708281358054_AddBlogUrl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
